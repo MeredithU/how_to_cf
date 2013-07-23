@@ -11,13 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130723023809) do
-
-  create_table "steps", :force => true do |t|
-    t.string   "todo"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20130723180108) do
 
   create_table "tasks", :force => true do |t|
     t.string   "item"

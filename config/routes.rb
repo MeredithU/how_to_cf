@@ -2,7 +2,9 @@ HowTo::Application.routes.draw do
 
   root :to => "tasks#index"
 
-  resources :tasks
+  resources :tasks do
+    resources :steps
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
