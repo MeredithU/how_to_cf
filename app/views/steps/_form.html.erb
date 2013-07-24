@@ -1,0 +1,8 @@
+<%= form_for [@task, @step] do |f| %>
+  <p>
+    <%= f.label :todo %><br />
+    <%= f.text_field :todo %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

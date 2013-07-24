@@ -1,1 +1,10 @@
+<h2><%= @task.item %></h2>
+
+<ul>
+  <% @task.steps.each do |step| %>
+    <li><%= step.id %> - <%= link_to step.todo, [@task, step] %></li>
+  <% end %>
+</ul>
+<br />
+
 <%= link_to "New Step", new_task_step_path(@task) %>
